@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/index.js" defer></script>
+  <title>Jogo da Forca</title>
+</head>
+<body>
+  <main id="container">
+    <h1>Jogo da Forca</h1>
+
+    <div class="containerStartGame">
+      <span class="spanAlerts startGame">
+        <p>Deseja Jogar Agora?</p>
+        <button class="btnAlertSpan btnStartGame">Jogar</button>
+      </span>
+      <span class="spanAlerts gameOver close">
+        <p>Fim de Jogo.</p>
+        <button class="btnAlertSpan btnGameOver">Jogar Novamente</button>
+      </span>
+    </div>
+
+    <div id="game">
+
+      <h2>Tentativas: <span id="attempts">0</span></h2>
+
+      <div id="strength">
+        <div class="containerStrength">
+          <img src="./imgs/forca-removebg.png" alt="Forca">
+          <span class="head"></span>
+          <span class="body"></span>
+          <span class="arm1"></span>
+          <span class="arm2"></span>
+          <span class="leg1"></span>
+          <span class="leg2"></span>
+        </div>
+
+        <div id="wordContainer">
+          <!-- <div class="word"></div> -->
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btnLetter">a</button>
+        <button class="btnLetter">b</button>
+        <button class="btnLetter">c</button>
+        <button class="btnLetter">d</button>
+        <button class="btnLetter">e</button>
+        <button class="btnLetter">f</button>
+        <button class="btnLetter">g</button>
+        <button class="btnLetter">h</button>
+        <button class="btnLetter">i</button>
+        <button class="btnLetter">j</button>
+        <button class="btnLetter">k</button>
+        <button class="btnLetter">l</button>
+        <button class="btnLetter">m</button>
+        <button class="btnLetter">n</button>
+        <button class="btnLetter">o</button>
+        <button class="btnLetter">p</button>
+        <button class="btnLetter">q</button>
+        <button class="btnLetter">r</button>
+        <button class="btnLetter">s</button>
+        <button class="btnLetter">t</button>
+        <button class="btnLetter">u</button>
+        <button class="btnLetter">v</button>
+        <button class="btnLetter">w</button>
+        <button class="btnLetter">x</button>
+        <button class="btnLetter">y</button>
+        <button class="btnLetter">z</button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

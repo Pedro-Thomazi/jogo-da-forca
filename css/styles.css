@@ -1,0 +1,234 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-image: url('../imgs/fotoDeFundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+  padding: 0 10px;
+}
+
+#container h1 {
+  font-size: 2.2em;
+}
+
+.containerStartGame {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000b4;
+  opacity: 1;
+  pointer-events: all;
+  transition: .4s;
+}
+
+.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.spanAlerts {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #999;
+  max-width: 500px;
+  width: 100%;
+  padding: 10px;
+  font-size: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid goldenrod;
+  z-index: 100;
+}
+
+.spanAlerts p {
+  margin-bottom: 1.3em;
+}
+
+.spanAlerts .btnAlertSpan {
+  width: 50%;
+  font-size: 1em;
+}
+
+
+
+/* Game */
+#game {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  width: 100%;
+  background-color: #00000071;
+}
+
+#game h2 {
+  color: #fff;
+  font-size: 2em;
+  margin: 10px;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2em;
+  border-top: 2px solid #000;
+  padding-top: 10px;
+}
+
+.buttons button {
+  width: 75px;
+  height: 50px;
+  font-size: 1.5em;
+  margin: 5px;
+  border: 2px solid goldenrod;
+  transition: .2s;
+}
+
+.buttons button:active {
+  transform: scale(.9);
+}
+
+.buttons button.notAgain {
+  pointer-events: none;
+  background-color: #ff000062;
+  color: rgb(85, 0, 0);
+}
+
+
+/* Forca */
+#strength {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  width: 100%;
+  margin: 2em 0;
+}
+
+.containerStrength {
+  position: relative;
+}
+
+.containerStrength span {
+  position: absolute;
+  border: 2px solid #000;
+  opacity: 0;
+  transition: .2s;
+}
+
+.containerStrength span.head {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  left: 88px;
+  top: 29px;
+  background-color: #000;
+}
+
+.containerStrength span.head.show {
+  opacity: 1;
+}
+
+.containerStrength span.body {
+  width: 3px;
+  height: 90px;
+  left: 110px;
+  top: 80px;
+  background-color: #000;
+}
+
+.containerStrength span.body.show {
+  opacity: 1;
+}
+
+.containerStrength span.arm1 {
+  width: 3px;
+  height: 50px;
+  left: 91px;
+  top: 75px;
+  transform: rotate(45deg);
+  background-color: #000;
+}
+
+
+.containerStrength span.arm1.show {
+  opacity: 1;
+}
+
+.containerStrength span.arm2 {
+  width: 3px;
+  height: 50px;
+  left: 129px;
+  top: 75px;
+  transform: rotate(-45deg);
+  background-color: #000;
+}
+
+.containerStrength span.arm2.show {
+  opacity: 1;
+}
+
+.containerStrength span.leg1 {
+  width: 3px;
+  height: 50px;
+  left: 95px;
+  top: 160px;
+  transform: rotate(35deg);
+  background-color: #000;
+}
+
+.containerStrength span.leg1.show {
+  opacity: 1;
+}
+
+.containerStrength span.leg2 {
+  width: 3px;
+  height: 50px;
+  left: 125px;
+  top: 160px;
+  transform: rotate(-35deg);
+  background-color: #000;
+}
+
+.containerStrength span.leg2.show {
+  opacity: 1;
+}
+
+#wordContainer {
+  display: flex;
+  /* font-size: ; */
+}
+
+#wordContainer .word {
+  text-align: center;
+  font-size: 2.3em;
+  line-height: 60px;
+  width: 50px;
+  height: 60px;
+  border-bottom: 2px solid #999;
+  color: #fff;
+  margin-left: 10px;
+}
